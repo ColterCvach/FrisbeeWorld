@@ -83,6 +83,7 @@
     <Compile Include="Assets\Scripts\OrbitingObjectMovementHandler.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\Test\ForwardMove.cs" />
+    <Compile Include="Assets\Scripts\Test\Move forward.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
