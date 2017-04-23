@@ -23,6 +23,7 @@ public class GravityAffected : MonoBehaviour
     void Update()
     {
         GravityUpdate();
+        ChangeOrientation();
     }
 
     void OnCollisionEnter(Collision collision)
@@ -41,7 +42,7 @@ public class GravityAffected : MonoBehaviour
         }
     }
 
-    private void GravityUpdate()
+    protected void GravityUpdate()
     {
         float strongestPull = 0.0f;
         for (int i = 0; i < Sources.Length; i++)
@@ -53,10 +54,10 @@ public class GravityAffected : MonoBehaviour
                 strongestPull = pull.magnitude;
             }
         }
-        ChangeOrientation();
     }
 
-    private void ChangeOrientation()
+
+    protected void ChangeOrientation()
     {
         Vector3 localUp = this.transform.up;
         Vector3 gravityUp = this.transform.position - StrongestSource.transform.position;

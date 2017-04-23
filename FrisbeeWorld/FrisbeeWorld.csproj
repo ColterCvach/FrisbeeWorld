@@ -78,10 +78,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\BreakableTarget.cs" />
+    <Compile Include="Assets\Scripts\DestroyAfterTime.cs" />
     <Compile Include="Assets\Scripts\Gravity\GravityAffected.cs" />
+    <Compile Include="Assets\Scripts\Gravity\GravityAffectedPlayer.cs" />
     <Compile Include="Assets\Scripts\Gravity\GravitySource.cs" />
     <Compile Include="Assets\Scripts\OrbitingObjectMovementHandler.cs" />
-    <Compile Include="Assets\Scripts\PlayerMovement.cs" />
+    <Compile Include="Assets\Scripts\PlayerControls\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\Test\ForwardMove.cs" />
     <Compile Include="Assets\Scripts\Test\Move forward.cs" />
   </ItemGroup>
