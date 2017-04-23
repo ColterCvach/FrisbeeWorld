@@ -46,10 +46,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\CopyPosition.cs" />
      <Compile Include="Assets\Scripts\BreakableTarget.cs" />
      <Compile Include="Assets\Scripts\ColterThrowTest.cs" />
      <Compile Include="Assets\Scripts\DestroyAfterTime.cs" />
+     <Compile Include="Assets\Scripts\FirstPersonCameraControl.cs" />
+     <Compile Include="Assets\Scripts\Gravity\GravityAffected.cs" />
+     <Compile Include="Assets\Scripts\Gravity\GravityAffectedPlayer.cs" />
+     <Compile Include="Assets\Scripts\Gravity\GravitySource.cs" />
+     <Compile Include="Assets\Scripts\MetaGoals\TargetManager.cs" />
      <Compile Include="Assets\Scripts\OrbitingObjectMovementHandler.cs" />
+     <Compile Include="Assets\Scripts\Test\ForwardMove.cs" />
+     <Compile Include="Assets\Scripts\UI\UIManager.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

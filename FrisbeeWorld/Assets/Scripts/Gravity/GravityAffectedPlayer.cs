@@ -10,12 +10,23 @@ public class GravityAffectedPlayer : GravityAffected {
 	void Start () {
 		
 	}
-	
-	// Update is called once per frame
-	void Update () {
+
+    // Update is called once per frame
+    void Update()
+    {
         GravityUpdate();
+        HandleRotation(); 
         HandleInput();
         ChangeOrientation();
+    }
+
+
+    public void HandleRotation()
+    {
+        Vector3 planetNormal = (this.gameObject.transform.position - StrongestSource.gameObject.transform.position).normalized;
+        float dotResult = Vector3.Dot(Camera.main.transform.forward, planetNormal);
+        this.transform.forward = (Camera.main.transform.forward - (planetNormal * dotResult)); 
+        // this.transform.forward = ; 
     }
 
 
