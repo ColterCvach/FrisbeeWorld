@@ -26,7 +26,6 @@ public class GravityAffectedPlayer : GravityAffected {
         Vector3 planetNormal = (this.gameObject.transform.position - StrongestSource.gameObject.transform.position).normalized;
         float dotResult = Vector3.Dot(Camera.main.transform.forward, planetNormal);
         this.transform.forward = (Camera.main.transform.forward - (planetNormal * dotResult)); 
-        // this.transform.forward = ; 
     }
 
 
